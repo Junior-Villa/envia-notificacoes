@@ -14,7 +14,7 @@ logging.basicConfig(
 # Configuração via ENV
 # =======================
 
-PROMETHEUS_URL = os.getenv("PROMETHEUS_URL", "https://prometheus.waybe.com.br")
+PROMETHEUS_URL = os.getenv("PROMETHEUS_URL", "https://meu_prometheus.com.br")
 DISCORD_WEBHOOK_URL = os.getenv("DISCORD_WEBHOOK_URL")
 
 # Pode usar APP_NAMES=api1,api2,api3
