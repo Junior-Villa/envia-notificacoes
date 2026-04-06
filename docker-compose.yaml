@@ -1,0 +1,7 @@
+services:
+  prometheus-discord-alert:
+    build: . # Utiliza dockeerfile para compilar a API
+    container_name: envia-notificacoes-discord # Esse container envia notificacoes para o discord, vindas do grafana
+    env_file:
+      - .env
+    restart: unless-stopped
